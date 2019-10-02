@@ -1,0 +1,53 @@
+{% extends 'editor/layout.html' %}
+{% load static %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .container-nithin {
+      position: relative;
+      width: 100%;
+      /* max-width: 400px; */
+    }
+    
+    .container-nithin img {
+      width: 100%;
+      /* height: auto; */
+    }
+    
+    .container-nithin .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: rgba(73, 73, 73, 0.664);
+      color: white;
+      font-size: 20px;
+      padding: 12px 14px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align:  center;
+    }
+    
+    .container-nithin .btn:hover {
+      background-color: rgba(255, 255, 255, 0);
+    }
+    </style>
+</head>
+<body>
+<div class="container-nithin">
+  <img src="{% static 'editor/example.jpg' %}"  alt="Snow" style="width:100%">
+  <a href="editor">
+      <button class="btn waves-effect waves-light" type ="submit" name="action">Proceed</button>
+  </a>
+</div>
+
+</body>
+</html>
+
+{% endblock %}

@@ -7,5 +7,5 @@ def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
 def home(request):
-    return HttpResponse("Hello, Brother!")
-#     return render{}
+    return render(request = request,
+                template_name = 'editor/home.html')
